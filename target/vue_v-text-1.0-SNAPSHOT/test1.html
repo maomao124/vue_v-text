@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：vue_v-text
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/12
+  Time(创建时间)： 21:04
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <h3 v-text="message"></h3>
+    <h3 v-text="message1"></h3>
+    <h3>{{message1}}</h3>
+    <h3 v-text="message+'!!!'"></h3>
+    <h3>{{message+"!!!"}}</h3>
+</div>
+
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data:
+            {
+                message: "hello",
+                message1: "<h2>hello</h2>"
+            }
+    })
+</script>
+</body>
+</html>
